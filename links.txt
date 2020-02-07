@@ -1,7 +1,7 @@
 
 
 texto e apresentação        link
-home                       index.html
+home                        index.html
 a cafeteria                 acafeteria.html
 cardápio                    cardapio.html
 contato                     contato.html
