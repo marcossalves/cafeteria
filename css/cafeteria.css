@@ -50,8 +50,30 @@ nav ul li a {
 
 nav ul li a:hover {
   text-decoration: underline;
-  color: rgb(0, 200, 0);
+}
+  /*color: rgb(0, 200, 0);
   padding-left: 10px;
   padding-right: 10px;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0);*/
+
+  /*  Criação da formatação do rodapé (footer) */
+  footer {
+    background-color: sandybrown;
+    text-align: center;
+    color: rgb(200,0,0);
+    font-family: "Anton";
+    padding-top:20px;
+    font-weight: bold;
+  }
+    div ul li{
+      display: inline-block;
+    }
+
+    div a {
+      color: rgb(100,0,0);
+      text-decoration: none;
+    }
+
+
+  }
 }
