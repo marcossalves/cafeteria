@@ -30,7 +30,7 @@ nav ul li {
 }
 /* Alinhar os elementos de link ao centro usando text-align: center no nav, assim tudo que estiver centro do nav irá para o centro */
 nav {
-  text-align: center;
+  text-align: center; /*  area transparente topo do site index*/
   margin-top: 91px;
   /* A cor utilizada para o fundo da nav foi o rgba, que significa red, green, blue e alpha( transparência), 
   onde o valor mais próximo do 0(zero) é totalmente transparente e quando mais próximo do 1 é totalmente solido. 
@@ -51,29 +51,152 @@ nav ul li a {
 nav ul li a:hover {
   text-decoration: underline;
 }
-  /*color: rgb(0, 200, 0);
+/*color: rgb(0, 200, 0);
   padding-left: 10px;
   padding-right: 10px;
   background-color: rgb(0, 0, 0);*/
 
-  /*  Criação da formatação do rodapé (footer) */
-  footer {
-    background-color: sandybrown;
-    text-align: center;
-    color: rgb(200,0,0);
-    font-family: "Anton";
-    padding-top:20px;
-    font-weight: bold;
-  }
-    div ul li{
-      display: inline-block;
-    }
+/*  Criação da formatação do rodapé (footer) */
+footer {
+  background-color: sandybrown;
+  text-align: center;
+  color: rgb(200, 0, 0);
+  font-family: "Anton";
+  padding-top: 20px;
+  font-weight: bold;
+}
+div ul li {
+  /* () <div id= "nome do link HTML"</div> ) permite criar uma tag de  identificação especifica para aplicar regras css individuais -->*/
+  /* Altera os links redes sociais para o centro */
+  display: inline-block;
+}
 
-    div a {
-      color: rgb(100,0,0);
-      text-decoration: none;
-    }
+div a {
+  color: rgb(100, 0, 0);
+  text-decoration: none;
+}
 
+main {
+  /* vamos aplicar uma margem interna de 20px
+utilizaremos o comando padding*/
 
-  }
+  padding: 20px;
+}
+
+h2 {
+  /* conteudo sobre o titulo: Seja Bem-Vindo a Cafeteria PILÃO  e linha dupla index*/
+  font-family: Anton;
+  color: rgb(100, 0, 0);
+  font-size: 20pt;
+  border-bottom: 4px double rgb(100, 0, 0);
+  margin-left: 15px; /* alinha a margem da linha dupla individualmente*/
+  padding-left: 600px; /*  alinha o texto interno individualmente*/
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-family: Anton;
+  margin-left: 70px;
+  font-size: 15pt;
+  margin-bottom: 30px;
+  letter-spacing: 3px;
+}
+
+p {
+  padding-left: 70px;
+  padding-right: 70px;
+  text-align: justify;
+
+  /*aplicaremos um comando que aumenta a altura da linha. esse efeito simula o espaçamento entre linhas encontrando o word.
+  comando é line-height -> linha height*/
+
+  line-height: 30px;
+  margin-bottom: 30px;
+  font-family: Anton;
+  font-size: 13pt;
+}
+#home {
+  /* Home area da foto */
+  /* Aplica cor na area em volta da foto*/
+  /*background-color: red;*/
+  text-align: center; /* alinha a foto da home no centro. */
+}
+
+#home img {
+  /* tamanho altura das imagens home cafe 5 e cafe 7 imagens ficou uma do lado da outra com espaço de 10px*/
+  height: 400px;
+  width: 400px;
+  margin: 10px;
+
+  /* Vamos aplicar um efeito de transparência 
+  com o comando opacity. Onde os valores 1 é totalmente visível e 0 é totalmente transparente */
+  opacity: 0.5; /* deixa a imagem cafe 5 e 7 transparente*/
+  border-radius: 10%; /* altera a borda da foto 5 e 7 arredondado*/
+
+  transition: ease 2s; /* aplica efeito ao passar o mouse em cima das fotos 5 e 7*/
+}
+
+#home img:hover {
+  /* aplica efeito para ampliar as fotos 5 e 7 e o cursor do mouse altera para mãozinha*/
+  opacity: 1;
+  transform: scale(1.2);
+  cursor: pointer;
+  transform: rotate(
+    360deg
+  ); /* efeito deixa a imagem 5 e 7 girando em 360 graus ao passar o mouse em cima*/
+
+  /*transform: rotateX(
+    360deg
+  ); /* efeito rotateX ou rotateY diferente de rotação em 360 deixa a imagem 5 e 7 girando em angulo X ou Y/
+  */
+}
+
+#acafeteria {
+  text-align: center;
+}
+#acafeteria img {
+  width: 500px;
+  height: 400px;
+}
+
+#video {
+  text-align: center;
+}
+
+/* Abaixo a formatação para a página cardápio */
+#container,
+#linha,
+#imagem,
+#texto {
+  /* border: 1px solid red;*/
+}
+
+#container {
+  display: inline-block;
+}
+
+#linha {
+  /* alinha o texto de cafe mega especial */
+  display: table;
+  width: 80;
+  margin-left: auto;
+  margin-right: auto;
+}
+#imagem img {
+  /*ajusta imagem cafe Mega especial*/
+  width: 200px;
+  height: 200px;
+}
+#imagem {
+  width: 200px;
+  height: 200px;
+
+  /* Fazer a imagem flutuar para a esquerda*/
+  float: left;
+}
+
+#texto {
+  padding: 20px;
+  width: 80%;
+  float: left;
 }
