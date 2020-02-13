@@ -204,3 +204,64 @@ p {
   width: 80%;
   float: left;
 }
+
+form {
+  border: 1px solid red;
+  width: 50%; /* tamanho todos os campos formulário */
+  margin-left: auto; /* alinhar a caixa */
+  margin-right: auto; /*alinhar a caixa */
+  padding: 10px; /* mexer com a margem dos camppos para baixo*/
+  font-family: abel;
+}
+
+label {
+  /* para dispor os elementos nome, e-mail, telefone, Mensagem e sexo um abaixo do outro utilizaremos o comando display block */
+  display: block;
+  /* aplicar negrito usamos o comando font-weight com o valor bold*/
+  font-weight: bold;
+}
+/* posso aplicar as configurações em text, email, telefone, mensagem a dicionando input  type + nome*/
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 95%;
+  padding: 10px; /* altera a parte interna dos campos nome*/
+  margin-bottom: 15px;
+  /*border: 0; */
+  /*border-bottom: 1px solid silver; */
+  border-radius: 10px; /* deixa o campo name arredondado*/
+}
+input[type="tel"] {
+  width: 30%;
+}
+
+#sexo {
+  display: block;
+  margin-bottom: 15px;
+}
+select {
+  padding: 10px;
+  width: 20%;
+}
+option:hover {
+  background-color: rgb(100, 0, 0);
+  color: white;
+  cursor: pointer; /* muda o cursor do mouse*/
+  padding: 5px;
+}
+
+textarea {
+  width: 60%; /* aumenta a area do campo mensagens*/
+  height: 300px; /* aumenta a area do campo mensagens*/
+  display: block;
+  margin-bottom: 15pt;
+}
+
+input[type="sumit"] {
+  display: block;
+  border: 0;
+  color: white;
+  padding: 5px;
+  background-color: rgb(100, 0, 0);
+  cursor: pointer;
+}

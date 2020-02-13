@@ -32,7 +32,61 @@ barra de navegação
       </nav>
     </header>
     <!-- A estrutura da área main fica reservada ao conteúdo das páginas específicas -->
-    <main></main>
+    <main>
+      <h2>Contato</h2>
+        <!--action é a pagina que recebe os dados do formulário de preenchimento de dados-->
+        <form action="confirmacao.html">
+          <!-- caixa que guarda o nome  -->
+          <label> Nome * </label>
+          <input type="text" name="nome" placeholder="Nome completo" required />
+
+          <!-- required quer dizer que a caixa não pode ficar vazia-->
+          <!--campo solicitação e-mail-->
+          <label>E-mail *</label>
+
+          <!-- Placeholder sugere como deve ser preenchido o e-mail -->
+          <input
+            type="email"
+            name="email"
+            placeholder="Exemplo@dominio.com.br"
+            required
+          />
+          <!--Exibir telefone-->
+          <label> Telefone:</label>
+          <input type="tel" name="telefone" />
+          
+          <label>Sexo</label>
+          <span id="sexo">
+            <input type="radio" name="sexo" value="Masculino" /> Masculino
+            <input type="radio" name="sexo" value="feminino" /> Feminino
+            <input type="radio" name="sexo" value="Outros" /> Outros
+          </span>
+
+          <select name="assunto">
+            <option value="Selecione"> Selecione o Assunto</option>
+            <option value="Elogio">Elogio</option>
+            <option value="Sugestão">Sugestão</option>
+            <option value="Reclamação">Reclamação</option>
+            <option value="Problemas">Problemas</option>
+          </select>
+
+          <label> Mensagem</label>
+          <textarea name="mensagem"></textarea>
+
+          <span id="check"
+            ><input type="Checkbox" name="newsletter" />
+            Desejo receber mensagens e notícias sobre promoções e evntos em meu
+            e-mail e telefone.
+          </span>
+
+          
+
+          <input type="submit" value="enviar" />
+          <!-- submit vai enviar os dados do formulário-->
+        </form>
+        <!--action é a pagina que recebe os dados do formulário de preenchimento de dados-->
+      </h2>
+    </main>
 
     <!-- Criação da área do rodapé com o comando footer. Esta área se destina a exibição do endereço, email, telefone e redes sociais -->
     <footer>
